@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -76,22 +77,124 @@ h1>span {
     height: 750px;
     position: relative;
 }
-.shoe{
+
+.shoe {
     position: absolute;
     right: 200px;
     z-index: 9;
     top: 100px;
     max-width: 576px;
 }
-.shoe-style{
+
+.shoe-style {
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-direction: column;
     margin-top: 20px;
 }
-.shoe-style>p{
+
+.shoe-style>p {
     font-size: 48px;
     max-width: 574px;
     font-family: 'Archivo';
+    margin-bottom: 30px;
+}
+
+.flowshoe {
+    width: 50vw;
+}
+
+.cont {
+    position: relative;
+    padding: 20px;
+}
+
+.heel {
+    width: 100%;
+
+}
+
+.heeltext {
+    width: 245px;
+    z-index: 9;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+
+.cap {
+    font-size: 32px;
+}
+
+.ar2 {
+    left: 150px;
+    width: 200px;
+    top: 150px;
+    position: absolute
+}
+
+.ar1 {
+    right: 300px;
+    width: 200px;
+    top: 100px;
+    position: absolute
+}
+.cap,.front,.tract{
+    margin-bottom: 10px;
+}
+.frontext {
+    width: 245px;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    right: 80px;
+    top: 150px;
+    z-index: 9;
+}
+.traction {
+    width: 245px;
+    text-align: left;
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 380px;
+    z-index: 9;
+}
+.ar3{
+    position: absolute;
+    bottom: 0;
+    left: 500px;
+    width: 200px;
+}
+
+.pant{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.pent{
+    height: 450px;
+    margin-top: -20px;
+}
+
+.right{
+    max-width: 500px;
+}
+.wall{
+    height: 400px;
+    width: 399px;
+    background-image: url(./images/wall.png);
+    /* transform: rotate(90deg); */
+    margin-left: 80px;
+}
+.about{
+    font-size: 60px;
+}
+.info{
+    font-size: 20px;
 }
