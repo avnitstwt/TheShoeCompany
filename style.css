@@ -1,44 +1,97 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: black;
     color: white;
 }
-    .logo{
-        width: 130px;
-    }
-    a{
-        text-decoration: none;
-        color: white;
-    }
-    .logotext{
-        margin-top: -24px;
-    }
-    header{
-        display: flex;
-        justify-content: space-between;
-    }
-    .grouplogo{
-        padding-left: 54px;
 
-    }
+.logo {
+    width: 130px;
+}
 
-    .navigation{
-        display: flex;
-        width: 755px;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .lik{
-        font-size: 24px;
-        list-style: none;
-        font-weight: 700;
-    }
-    .shoeimg{
-        background-image: url(./images/background.png);
-        background-size: cover;
-;
-    }
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.logotext {
+    margin-top: -24px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.grouplogo {
+    padding-left: 54px;
+
+}
+
+.navigation {
+    display: flex;
+    width: 755px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lik {
+    font-size: 24px;
+    list-style: none;
+    font-weight: 700;
+}
+
+.shoeimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .shoeimg>p{
+    width: min-content;
+} */
+h1>span {
+    font-size: 72px;
+    display: block;
+}
+
+.textt {
+    padding-left: 40px;
+}
+
+.imager {
+    background-size: cover;
+    background-image: url(./images/background.png);
+    width: 600px;
+    height: 750px;
+    position: relative;
+}
+.shoe{
+    position: absolute;
+    right: 200px;
+    z-index: 9;
+    top: 100px;
+    max-width: 576px;
+}
+.shoe-style{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.shoe-style>p{
+    font-size: 48px;
+    max-width: 574px;
+    font-family: 'Archivo';
+}
