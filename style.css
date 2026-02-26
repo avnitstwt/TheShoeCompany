@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+    .logo{
+        width: 130px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    .logotext{
+        margin-top: -24px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .grouplogo{
+        padding-left: 54px;
+
+    }
+
+    .navigation{
+        display: flex;
+        width: 755px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .lik{
+        font-size: 24px;
+        list-style: none;
+        font-weight: 700;
+    }
+    .shoeimg{
+        background-image: url(./images/background.png);
+        background-size: cover;
+;
+    }

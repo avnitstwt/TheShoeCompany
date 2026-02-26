@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Shoe Company</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+     <style>
+        /* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.logo-box {
+    text-decoration: none;
+    color: white;
+}
+
+.logo-img { width: 100px; }
+.logo-text { font-size: 12px; margin-top: -15px; }
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+/* Hero Section */
+.hero-section {
+    padding-top: 150px;
+    background-image: url('./images/background.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-title {
+    font-size: 5rem;
+    line-height: 1.1;
+}
+
+.hero-img { width: 100%; max-width: 500px; }
+
+/* Features Section */
+.how-section { padding-top: 80px; text-align: center; }
+
+.relative { position: relative; }
+
+.features-grid {
+    margin-top: 50px;
+    display: inline-block;
+}
+
+.main-shoe-img { width: 100%; max-width: 600px; }
+
+.feature-card {
+    position: absolute;
+    width: 250px;
+    text-align: left;
+}
+
+.feature-heel { top: 0; left: -150px; }
+.feature-front { top: 50px; right: -150px; }
+.feature-traction { bottom: -50px; left: 0; }
+
+/* About Section */
+.about-section {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    align-items: center;
+}
+
+.about-text h2 { font-size: 3.5rem; margin-bottom: 20px; }
+.about-text p { margin-bottom: 15px; line-height: 1.6; }
+
+/* Footer */
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+}
+
+/* Responsive (Media Queries) */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .hero-content { flex-direction: column; text-align: center; }
+    .hero-title { font-size: 3.5rem; }
+    .about-section { flex-direction: column; }
+}
+     </style>
+</head>
+<body class="bg-dark">
+    <header class="main-header">
+        <div class="header-container section-container">
+            <a href="#" class="logo-box">
+                <img src="./images/logo.png" alt="logo" class="logo-img" />
+                <p class="logo-text">The Shoe Company</p>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#how-it-works">How It Works?</a>
+                <a href="#about">About</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <button class="mobile-menu-btn">≡</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section section-container">
+            <div class="hero-content">
+                <h1 class="hero-title">THE <br /> SHOE <br /> COMPANY</h1>
+                <div class="hero-image-box">
+                    <img src="./images/shoe.png" alt="white shoe image" class="hero-img" />
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-section section-container">
+            <h2 class="section-title">Have they finally made the perfect workout shoe?</h2>
+            <div class="features-grid relative">
+                <img src="./images/how-it-works.png" alt="shoe" class="main-shoe-img" />
+                
+                <div class="feature-card feature-heel">
+                    <h3>THE HEEL</h3>
+                    <p>The heel is well-built, has appropriate elevation and is not too rigid.</p>
+                    <img src="./images/arrow-1.png" alt="arrow" class="arrow-img" />
+                </div>
+
+                <div class="feature-card feature-front">
+                    <img src="./images/arrow-2.png" alt="arrow" class="arrow-img" />
+                    <h3>THE FRONT</h3>
+                    <p>The front is comfortable and adjusts well to the shape of your foot.</p>
+                </div>
+
+                <div class="feature-card feature-traction">
+                    <img src="./images/arrow-3.png" alt="arrow" class="arrow-img" />
+                    <h3>TRACTION</h3>
+                    <p>The shoe has good traction and doesn't slip easily.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section section-container">
+            <div class="about-img-box">
+                <img src="./images/about-shoe-company.png" alt="legs" />
+            </div>
+            <div class="about-text">
+                <h2>About Us!</h2>
+                <p>For each one of those shoe sweethearts out there, THE SHOE COMPANY offer the one-stop goal to pick the correct match of footwear.</p>
+                <p>Gone are the days when you needed to go from store to store to locate the correct style and size for yourself.</p>
+                <p>At THE SHOE COMPANY, you can locate a vast accumulation of dashing footwear in all sizes and styles, all inside a couple of snaps.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer section-container">
+        <div class="footer-content">
+            <a href="#" class="logo-box">
+                <img src="./images/logo.png" alt="logo" />
+                <p>The Shoe Company</p>
+            </a>
+            <p>Made with ❤️ By Anurag Singh</p>
+        </div>
+    </footer>
+</body>
+</html>
