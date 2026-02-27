@@ -12,7 +12,7 @@ body {
 }
 
 .logo {
-    width: 130px;
+    width: 120px;
 }
 
 a {
@@ -21,7 +21,7 @@ a {
 }
 
 .logotext {
-    margin-top: -24px;
+    margin-top: -30px;
 }
 
 header {
@@ -176,9 +176,11 @@ h1>span {
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    margin-bottom: 50px;
+    padding-right: 100px;
 }
 .pent{
-    height: 450px;
+    height: 600px;
     margin-top: -20px;
 }
 
@@ -186,7 +188,7 @@ h1>span {
     max-width: 500px;
 }
 .wall{
-    height: 400px;
+    height: 500px;
     width: 399px;
     background-image: url(./images/wall.png);
     /* transform: rotate(90deg); */
@@ -197,4 +199,95 @@ h1>span {
 }
 .info{
     font-size: 20px;
+}
+
+.mainbox{
+    background-image: url(./images/peoplebg.png);
+    height: 800px;
+    background-size: cover;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+flex-direction: column;
+}
+.hed{
+
+    font-size: 64px;
+    text-align: center;
+}
+.coll{
+    display: flex;
+    justify-content: space-around;
+gap: 70px;
+    align-items: center;
+}
+.coll img{
+    border-radius: 50%;
+    height: 250px;
+
+}
+.coll p{
+    width: 300px;
+    font-size: 20px;
+
+}
+.inf{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.map{
+    height: 400px;
+    overflow: hidden;
+border-radius: 10px;
+}
+
+.footlog{
+    width: 40px;
+    margin-bottom: -10px;
+
+}
+.foottext{
+    font-size: 8px;
+}
+
+svg{
+    width: 20px;
+    margin-bottom: -5px;
+}
+.contactus{
+    width: 300px;
+    font-size: 24px;
+}
+.boldcontact{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.USA{
+    line-height: 30px;
+}
+.imgs{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.deve{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.footimg{
+    margin-right: 10px;
+}
+
+.glass-effect {
+  background: rgba(21, 19, 19, 0.2); /* Thoda transparent color */
+  backdrop-filter: blur(10px);          /* Peeche ka content blur karega */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support ke liye */
 }
